@@ -1,13 +1,9 @@
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-}
 .back{
+    
     background-image: url("abcd.jpg");
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
