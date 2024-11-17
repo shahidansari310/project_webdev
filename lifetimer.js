@@ -12,6 +12,8 @@ const dayel=document.getElementById("day");
 const hourel=document.getElementById("hour");
 const minel=document.getElementById("min");
 const secel=document.getElementById("sec");
+
+
 const maketwo=(number)=>{
     return number > 9 ? number : `0${number}`;
 };
