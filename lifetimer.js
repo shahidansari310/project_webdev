@@ -29,14 +29,23 @@ const toggle = () => {
 
 const updateage=() =>{
     const currenDate= new Date();
-    const datediff=currenDate-dateofbirth;
-    const year=Math.floor(datediff/(1000*60*60*24*365));
-    const month=Math.floor(datediff/(1000*60*60*24)%12);
-    const day=Math.floor(datediff/(1000*60*60*24))%30;
-    const hour=Math.floor(datediff/(1000*60*60))%24;
-    const min=Math.floor(datediff/(1000*60))%60;
-    const sec=Math.floor(datediff/(1000))%60;
-    
+    const datediff = endDate - startDate;
+    const year = Math.floor(datediff / (1000 * 60 * 60 * 24 * 365.25));
+    const remainingAfterYears = datediff - (year * 1000 * 60 * 60 * 24 * 365.25);
+    const month = Math.floor(remainingAfterYears / (1000 * 60 * 60 * 24 * 30));
+    const remainingAfterMonths = remainingAfterYears - (month * 1000 * 60 * 60 * 24 * 30);
+    const day = Math.floor(remainingAfterMonths / (1000 * 60 * 60 * 24));  
+    const remainingAfterDays = remainingAfterMonths - (day * 1000 * 60 * 60 * 24);
+    const hour = Math.floor(remainingAfterDays / (1000 * 60 * 60));
+    const remainingAfterHours = remainingAfterDays - (hour * 1000 * 60 * 60);
+    const min = Math.floor(remainingAfterHours / (1000 * 60));
+    const remainingAfterMinutes = remainingAfterHours - (min * 1000 * 60);
+
+
+const sec = Math.floor(remainingAfterMinutes / 1000);
+
+console.log(`Years: ${year}, Months: ${month}, Days: ${day}, Hours: ${hour}, Minutes: ${min}, Seconds: ${sec}`);
+
     yearel.innerHTML=maketwo(year);
     monthel.innerHTML=maketwo(month);
     dayel.innerHTML=maketwo(day);
@@ -52,24 +61,7 @@ const setdobhandler =() =>{
     
     dateofbirth=datestring ? new Date(datestring) : null;
 
-    /*const year=localStorage.getItem("year");
-    const month=localStorage.getItem("month");
-    const day=localStorage.getItem("day");
-    const hour=localStorage.getItem("hour");
-    const min=localStorage.getItem("min");
-    const sec=localStorage.getItem("sec");
-    if(year && month && day && hour && min && sec){
-        dateofbirth=new Date(year,month,day,hour,min,sec);
-    };*/
-
     if(dateofbirth){
-
-        /*localStorage.setItem("year",dateofbirth.getFullYear());
-        localStorage.setItem("month",dateofbirth.getMonth());
-        localStorage.setItem("day",dateofbirth.getDate());
-        localStorage.setItem("hour",dateofbirth.getHours());
-        localStorage.setItem("min",dateofbirth.getMinutes());
-        localStorage.setItem("sec",dateofbirth.getSeconds());*/
 
         initialel.classList.add("hide");
         afterel.classList.remove("hide");
