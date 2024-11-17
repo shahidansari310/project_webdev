@@ -29,22 +29,13 @@ const toggle = () => {
 
 const updateage=() =>{
     const currenDate= new Date();
-    const datediff = endDate - startDate;
-    const year = Math.floor(datediff / (1000 * 60 * 60 * 24 * 365.25));
-    const remainingAfterYears = datediff - (year * 1000 * 60 * 60 * 24 * 365.25);
-    const month = Math.floor(remainingAfterYears / (1000 * 60 * 60 * 24 * 30));
-    const remainingAfterMonths = remainingAfterYears - (month * 1000 * 60 * 60 * 24 * 30);
-    const day = Math.floor(remainingAfterMonths / (1000 * 60 * 60 * 24));  
-    const remainingAfterDays = remainingAfterMonths - (day * 1000 * 60 * 60 * 24);
-    const hour = Math.floor(remainingAfterDays / (1000 * 60 * 60));
-    const remainingAfterHours = remainingAfterDays - (hour * 1000 * 60 * 60);
-    const min = Math.floor(remainingAfterHours / (1000 * 60));
-    const remainingAfterMinutes = remainingAfterHours - (min * 1000 * 60);
-
-
-const sec = Math.floor(remainingAfterMinutes / 1000);
-
-console.log(`Years: ${year}, Months: ${month}, Days: ${day}, Hours: ${hour}, Minutes: ${min}, Seconds: ${sec}`);
+    const datediff=currenDate-dateofbirth;
+    const year=Math.floor(datediff/(1000*60*60*24*365));
+    const month=Math.floor(datediff/(1000*60*60*24)%12);
+    const day=Math.floor(datediff/(1000*60*60*24))%30;
+    const hour=Math.floor(datediff/(1000*60*60))%24;
+    const min=Math.floor(datediff/(1000*60))%60;
+    const sec=Math.floor(datediff/(1000))%60;
 
     yearel.innerHTML=maketwo(year);
     monthel.innerHTML=maketwo(month);
