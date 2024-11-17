@@ -50,7 +50,25 @@ const setdobhandler =() =>{
     
     dateofbirth=datestring ? new Date(datestring) : null;
 
+    /*const year=localStorage.getItem("year");
+    const month=localStorage.getItem("month");
+    const day=localStorage.getItem("day");
+    const hour=localStorage.getItem("hour");
+    const min=localStorage.getItem("min");
+    const sec=localStorage.getItem("sec");
+    if(year && month && day && hour && min && sec){
+        dateofbirth=new Date(year,month,day,hour,min,sec);
+    };*/
+
     if(dateofbirth){
+
+        /*localStorage.setItem("year",dateofbirth.getFullYear());
+        localStorage.setItem("month",dateofbirth.getMonth());
+        localStorage.setItem("day",dateofbirth.getDate());
+        localStorage.setItem("hour",dateofbirth.getHours());
+        localStorage.setItem("min",dateofbirth.getMinutes());
+        localStorage.setItem("sec",dateofbirth.getSeconds());*/
+
         initialel.classList.add("hide");
         afterel.classList.remove("hide");
         setInterval(()=>updateage(),100);
