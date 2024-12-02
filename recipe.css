@@ -1,0 +1,53 @@
+#naav{
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style-type: none;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vw;
+    width: 100vw;
+    overflow-x: none ;
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(16, 141, 199), rgb(239, 142, 56));
+}
+.navcont{
+    
+    width: 100vw;
+    background: linear-gradient(to right, rgb(64, 224, 208), rgb(255, 140, 0), rgb(255, 0, 128));;
+    min-height: 80px;
+    position: relative;
+    padding: 20px;
+}
+#abcd{
+    font-size: 2.5rem;
+    color:brown;
+    text-shadow: 3px 3px 5px white;
+}
+a{
+   text-decoration: none;
+   /*border: 3px dashed;*/
+   padding: 10px;
+   
+}
+#cd{
+    display: flex;
+    gap: 30px;
+    text-shadow: 2px 3px 5px rgb(0, 81, 255);
+    
+}
+.footerbox{
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+}
