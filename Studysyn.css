@@ -246,3 +246,87 @@ body{
         font-weight: bold;
     }
 }
+.card{
+    background-color: var(--light-gray);
+    padding: 2rem ;
+    text-align: center;
+}
+.cardmain{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+.maincardh{
+    font-size: 2.5rem ;
+    padding: 0.6rem;
+}
+.maindes{
+    font-size: 1rem;
+    color: var(--dark-gray);
+}
+.fgrid{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 1.3rem ;
+}
+
+.iconn{
+    background-color: antiquewhite;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardimg{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.card1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center ;
+    box-sizing: border-box;
+    background-color: rgb(154, 58, 245);
+    color: white;
+    padding: 15px;
+    border-radius: 1rem;
+}
+.card1:nth-child(1){
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    gap:0.3rem;
+}
+.card1:nth-child(2){
+    background-color: red;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.card1:nth-child(3){
+    background-color: rgb(208, 255, 0);
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.card1:nth-child(4){
+    background-color: rgb(109, 7, 112);
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.card1:nth-child(5){
+    background-color: rgb(0, 255, 64);
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.card1:nth-child(6){
+    background-color: rgb(0, 255, 234);
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.card1:hover{
+    transform: scale(1.1);
+}
+.p1{
+    padding: 5%;
+}
+@media screen and (max-width:768px){
+    .fgrid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
