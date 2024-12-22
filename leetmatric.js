@@ -53,25 +53,59 @@ document.addEventListener("DOMContentLoaded",function(){
             const response=await fetch(proxyUrl+targetUrl,requestOptions);
 
 
-            if(response.ok){
+            if(!response.ok){
                throw new Error("Unable to fetch details");
             }
-            const data=await response.json();
-            console.log("Loggin data:", data);
+            const parsedData=await response.json();
+            console.log("Loggin data:", parsedData);
             
-            displayuserdata(data);
+            displayuserdata(parsedData);
         }
         catch(error){
-            statscont.innerHTML="<p>No Data Found !</p>"
+            statscont.innerHTML=`<p>${error.message}</p>`
         }
         finally{
             searchbutton.textContent="Search";
             searchbutton.disabled=false;
         }
     }
+    function updateProgress(solved,total,label,circle){
+        const progress=(solved/total)*100;
+        circle.style.setProperty("--progress-degree",`${progress}%`);
+        label.textContent=`${solved}/${total}`;
+    }
 
-    function displayuserdata(data){
-        const 
+    function displayuserdata(parsedData){
+        const totalQues = parsedData.data.allQuestionsCount[0].count;
+        const totalEasyQues = parsedData.data.allQuestionsCount[1].count;
+        const totalMediumQues = parsedData.data.allQuestionsCount[2].count;
+        const totalHardQues = parsedData.data.allQuestionsCount[3].count;
+
+        const solvedTotalQues = parsedData.data.matchedUser.submitStats.acSubmissionNum[0].count;
+        const solvedTotalEasyQues = parsedData.data.matchedUser.submitStats.acSubmissionNum[1].count;
+        const solvedTotalMediumQues = parsedData.data.matchedUser.submitStats.acSubmissionNum[2].count;
+        const solvedTotalHardQues = parsedData.data.matchedUser.submitStats.acSubmissionNum[3].count;
+       
+        updateProgress(solvedTotalEasyQues, totalEasyQues, elabel, easyy);
+        updateProgress(solvedTotalMediumQues, totalMediumQues, mlabel, mediumm);
+        updateProgress(solvedTotalHardQues, totalHardQues, hlabel, hardd);
+
+
+        const cardsData = [
+            {label: "Overall Submissions", value:parsedData.data.matchedUser.submitStats.totalSubmissionNum[0].submissions },
+            {label: "Overall Easy Submissions", value:parsedData.data.matchedUser.submitStats.totalSubmissionNum[1].submissions },
+            {label: "Overall Medium Submissions", value:parsedData.data.matchedUser.submitStats.totalSubmissionNum[2].submissions },
+            {label: "Overall Hard Submissions", value:parsedData.data.matchedUser.submitStats.totalSubmissionNum[3].submissions },
+        
+        ];
+        cardstatcont.innerHTML = cardsData.map(
+            data => 
+                    `<div class="card">
+                    <h4>${data.label}</h4>
+                    <p>${data.value}</p>
+                    </div>`
+        ).join("")
+
     }
 
 
