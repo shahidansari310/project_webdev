@@ -10,27 +10,38 @@
 </head>
 <body>
     <div class="navbar flex justify-between item-center p-4">
-        <div class="flex justify-center items-center">
+        <div class="flex justify-center items-center md:order-2">
             <div class="hamburger inline-block  cursor-pointer md:hidden">
                 <div class="line h-0.5 w-6 my-1 bg-black"></div>
                 <div class="line h-0.5 w-6 my-1 bg-black"></div>
                 <div class="line h-0.5 w-6 my-1 bg-black"></div>
             </div>
-            <div class="search mx-3">
+            <div class="search mx-3 md:hidden">
                 <img 
                   src="https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_1280.png" 
                   alt="" 
-                  class="h-6 w-6">
+                  class="h-6 w-6 ">
               </div>
             </div>
-              <div class="logo text-center">
+              <div class="logo text-center md:order-1 md:flex md:flex-row">
                 <img 
-                  class=" h-auto w-32 md:order-1" 
+                  class=" h-auto w-32 " 
                   src="https://blogs.microsoft.com/wp-content/uploads/prod/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg" 
                   alt="">
+                  <div class="nav-links hidden md:flex space-x-4 py-2">
+                    <a href="#" class="text-gray-500">Home</a>
+                    <a href="#" class="text-gray-500">About</a>
+                    <a href="#" class="text-gray-500">Services</a>
+                    <a href="#" class="text-gray-500">Contact</a>
+                </div>
               </div>
-              
-              <div class="cart flex justify-self-end space-x-3">
+              <div class="cart flex justify-self-end space-x-3 md:order-3">
+                <div class="search my-1 hidden md:block">
+                    <img 
+                      src="https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_1280.png" 
+                      alt="" 
+                      class="h-6 w-6 ">
+                  </div>
                 <img 
                   src="https://png.pngtree.com/png-clipart/20190920/original/pngtree-shopping-cart-convenient-icon-png-image_4637407.jpg" 
                   alt="" 
