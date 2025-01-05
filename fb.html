@@ -6,25 +6,26 @@
     <title>Facebook-Login or Signup</title>
     <link rel="icon" href="facebook.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="fb.css">
+    <link rel="stylesheet" href="./fb.css">
 </head>
-<body>
-    <div class="conatiner">
-        <div class="left">
-            <img src="fb.svg" alt="Facebook">
-            <p>Facebook helps you connect and share with people in your life.</p>
-        </div>
-        <div class="right">
-            <div class="box-content">
-                <input type="text" placeholder="Email address or phone number">
-                <input type="password" placeholder="Password">
-                <button>Log In</button>
-                <a href="#">Forgotten password?</a>
-                <button>Create a New Account</button>
+<body class="bg-gray-100 dark:bg-gray-800">
+    <div class="conatiner flex justify-center items-center h-screen gap-x-14 text-xl">
+        <div class="left flex flex-col align-top space-y-0">
+            <img class="-mx-14 h-28 w-96" src="fb.svg" alt="Facebook">
+            <h1 class="text-2xl font-sans">Facebook helps you connect and share with people in your life.</h1>
+        </div>          
+        <div class="right flex flex-col p-3">  
+            <div class="box-border shadow-xl flex flex-col gap-y-[8px] justify-center items-center bg-white rounded-[10px] border-4 py-8 px-5">
+                <input class="box-content border-2  px-14 py-2 rounded-lg " type="text" placeholder="Email or phone number">
+                <input class="box-content border-2  px-14 py-2 rounded-lg" type="password" placeholder="Password">
+                <button class=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-[150px] py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800;">Log In</button>
+                <a href="#" class="text-blue-500 text-sm">Forgotten password?</a>
+                <button class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Create a New Account</button>
             </div>
-            <span class="font-bold">Create a page</span> for a celebrity, band or business.
+            <div  class="flex flex-row py-4  gap-x-1 text-xs justify-center">
+                <span class="font-bold">Create a page </span>  for a celebrity, band or business.
+            </div>
         </div>
     </div>
-
 </body>
 </html>
