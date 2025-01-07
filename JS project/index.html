@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassX- your personal Password Mananger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Welcome to SecureVault! 🔐</h1>
+        <span>Your trusted companion for managing and protecting your passwords effortlessly.
+        </span>
+        <br>
+        ✨ Stay Organized, Stay Safe
+
+        Let’s get started on a safer, smarter password journey!
+        <br>
+        <h2>Your Password</h2>
+        <table>
+            <tr>
+                <th>Website</th>
+                <th> Username</th>
+                <th>Password</th>
+                <th>Delete</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+        </table>
+        <h2>Add a Password</h2>
+        <form action="/submit" method="post">
+        <label for="Username">Username : </label>
+        <input type="text" placeholder="Username" id="username" name="username" required>
+        <br>
+        <br>
+        <label for="password">Password : </label>
+        <input type="password" placeholder="Password" id="password" name="password" required>
+        <br>
+        <br>
+        <input type="submit" name="Submit" id="Submit">
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
