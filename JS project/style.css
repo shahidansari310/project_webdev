@@ -51,3 +51,6 @@ tr,td{
 input{
     background-color: black;
 }
+img{
+    cursor: pointer;
+}
