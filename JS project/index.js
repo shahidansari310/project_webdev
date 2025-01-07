@@ -1,7 +1,18 @@
+//Function for masked password
+function m(pass){
+    let str="";
+    for(let i=0;i<pass.length;i++){
+        str+="*";
+    }
+    return str
+}
+
 // Function to copy text to clipboard
 function copytext(txt) {
     navigator.clipboard.writeText(txt).then(function() {
-        alert('Text copied to clipboard!');
+        document.getElementById("alert").style.display = "inline";
+        setTimeout(() => {
+        document.getElementById("alert").style.display = "none";},2000)
     }).catch(function(error) {
         alert('Failed to copy text: ' + error);
     });
@@ -38,7 +49,7 @@ const s = () => {
             let str = `<tr>
                 <td>${element.website} <img onclick="copytext('${element.website}')" src="copy.svg" alt="Copy" height="15" width="15" /></td>
                 <td>${element.username} <img onclick="copytext('${element.username}')" src="copy.svg" alt="Copy" height="15" width="15" /></td>
-                <td>${element.password} <img onclick="copytext('${element.password}')" src="copy.svg" alt="Copy" height="15" width="15" /></td>
+                <td>${m(element.password)} <img onclick="copytext('${element.password}')" src="copy.svg" alt="Copy" height="15" width="15" /></td>
                 <td><button class="Submit" onclick="d('${element.website}')">Delete</button></td>
             </tr>`;
             t.innerHTML += str;

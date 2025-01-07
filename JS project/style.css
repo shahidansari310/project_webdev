@@ -54,3 +54,6 @@ input{
 img{
     cursor: pointer;
 }
+#alert{
+    display: none;
+}
