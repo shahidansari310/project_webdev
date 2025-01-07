@@ -1,4 +1,12 @@
 //Logic for table
+const d=(website)=>{
+    let data = localStorage.getItem("passwords")
+    let arr = JSON.parse(data)
+    arrup=arr.filter((e)=>{
+        return e.website!=website
+    })
+    localStorage.setItem("passwords", JSON.stringify(arrup))
+}
 const s=() => {
     let t = document.querySelector("table")
     let data = localStorage.getItem("passwords")
@@ -21,7 +29,7 @@ const s=() => {
     <td>${element.website}</td>
     <td>${element.username}</td>
     <td>${element.password}</td>
-    <td>${"Delete"}</td>
+    <td><button  class="Submit" onclick="d('${element.website}')" >Delete</button></td>
     </tr>`
             t.innerHTML = t.innerHTML + str
         }
