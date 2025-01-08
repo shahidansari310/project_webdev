@@ -1,5 +1,5 @@
 console.log("Welcome to tic tac toe");
-let music=new Audio("music.mp3");
+// let music=new Audio("music.mp3");
 let turnm =new Audio("ting.mp3");
 let gameover=new Audio("gameover.mp3");
 let turn="X";
@@ -31,7 +31,20 @@ const checkwin =()=>{
     })
 }
 
+
+const backgroundMusic = new Audio("music.mp3"); // Replace with your music file path
+
+// Play music when the game starts
+const playMusic = () => {
+    backgroundMusic.loop = true; // Set to loop for continuous playback
+    backgroundMusic.play().catch(error => {
+        console.log("Music playback error:", error);
+    });
+};
+
+
 //game logic
+playMusic();
 let boxex=document.getElementsByClassName("box");
 Array.from(boxex).forEach(element=>{
     let boxtext=element.querySelector(".boxtext");
