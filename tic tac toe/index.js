@@ -47,3 +47,16 @@ Array.from(boxex).forEach(element=>{
         }
     })
 })
+
+//reset button
+reset.addEventListener("click",()=>{
+    let boxtexts=document.querySelectorAll(".boxtext");
+    Array.from(boxtexts).forEach(element=>{
+        element.innerText="";
+    })
+    turn="X";
+    isgameover=false;
+    document.querySelector(".info").innerText="Turn of :"+turn;
+    document.querySelector(".imgbox").getElementsByTagName("img")[0].style.width="0px";
+    gameover.play();
+})
