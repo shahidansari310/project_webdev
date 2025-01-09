@@ -67,8 +67,13 @@
 //     console.log(c);
 // }
 
+// let i=5;
+// while(i<10){
+//     console.log(i);
+//     i++;
+// }
 let i=5;
-while(i<10){
+do{
     console.log(i);
     i++;
-}
+}while(i<10);
