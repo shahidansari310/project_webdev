@@ -22,11 +22,25 @@ console.log(typeof a , typeof b ,typeof c);
 // let b=document.getElementsByClassName("dark-mode");         
                           
                                                                           
-let f ={
-    name:"Shahid",
-    age:22,
-    city:"Mumbai",
-    country:"India",
-} 
-console.log(f);      
-                            
+// let f ={
+//     name:"Shahid",
+//     age:22,
+//     city:"Mumbai",
+//     country:"India",
+// } 
+// console.log(f);      
+                  
+let age=20;
+if(age>18){
+    console.log("You are eligible ");
+}
+else if(age==18){
+    console.log("You are *  eligible");
+}
+else{
+    console.log("You are not eligible");
+}
+
+
+let w=a>b ? "a is greater" : "b is greater";
+console.log(w);
