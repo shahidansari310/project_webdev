@@ -49,20 +49,26 @@
 //     console.log("5"+ "*" +i +"=" + 5*i);
 // }
 
-let obj={
-    name:"Shahid",
-    age:22,
-    city:"Mumbai",
-    country:"India",    
-}
-for (const key in obj) {
-    if (Object.prototype.hasOwnProperty.call(obj, key)) {
-        const element = obj[key];
-        console.log(element);
-    }
-}
+// let obj={
+//     name:"Shahid",
+//     age:22,
+//     city:"Mumbai",
+//     country:"India",    
+// }
+// for (const key in obj) {
+//     if (Object.prototype.hasOwnProperty.call(obj, key)) {
+//         const element = obj[key];
+//         console.log(element);
+//     }
+// }
 
-let b="Shahid";
-for (const c of b) {
-    console.log(c);
+// let b="Shahid";
+// for (const c of b) {
+//     console.log(c);
+// }
+
+let i=5;
+while(i<10){
+    console.log(i);
+    i++;
 }
