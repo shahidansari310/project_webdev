@@ -62,3 +62,7 @@ for (const key in obj) {
     }
 }
 
+let b="Shahid";
+for (const c of b) {
+    console.log(c);
+}
