@@ -76,4 +76,5 @@ let i=5;
 do{
     console.log(i);
     i++;
-}while(i<10);
+}while(i<4);
+// it will run one time even if the condition is false
