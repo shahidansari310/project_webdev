@@ -45,6 +45,20 @@
 // let w=a>b ? "a is greater" : "b is greater";
 // console.log(w);
 
-for(let i=0;i<=10;i++){
-    console.log("5"+ "*" +i +"=" + 5*i);
+// for(let i=0;i<=10;i++){
+//     console.log("5"+ "*" +i +"=" + 5*i);
+// }
+
+let obj={
+    name:"Shahid",
+    age:22,
+    city:"Mumbai",
+    country:"India",    
 }
+for (const key in obj) {
+    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        const element = obj[key];
+        console.log(element);
+    }
+}
+
