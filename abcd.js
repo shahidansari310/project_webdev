@@ -44,3 +44,7 @@
 
 // let w=a>b ? "a is greater" : "b is greater";
 // console.log(w);
+
+for(let i=0;i<=10;i++){
+    console.log("5"+ "*" +i +"=" + 5*i);
+}
