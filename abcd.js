@@ -11,11 +11,11 @@
 // document.write("Your name is : " + a);
 // document.title="Hello World";
 
-var a=5;
-var b="Shahid";
-let c=7;
-const d=10;
-console.log(typeof a , typeof b ,typeof c);
+// var a=5;
+// var b="Shahid";
+// let c=7;
+// const d=10;
+// console.log(typeof a , typeof b ,typeof c);
 
 
 // let a=document.getElementsByClassName("light-mode");
@@ -30,17 +30,17 @@ console.log(typeof a , typeof b ,typeof c);
 // } 
 // console.log(f);      
                   
-let age=20;
-if(age>18){
-    console.log("You are eligible ");
-}
-else if(age==18){
-    console.log("You are *  eligible");
-}
-else{
-    console.log("You are not eligible");
-}
+// let age=20;
+// if(age>18){
+//     console.log("You are eligible ");
+// }
+// else if(age==18){
+//     console.log("You are *  eligible");
+// }
+// else{
+//     console.log("You are not eligible");
+// }
 
 
-let w=a>b ? "a is greater" : "b is greater";
-console.log(w);
+// let w=a>b ? "a is greater" : "b is greater";
+// console.log(w);
