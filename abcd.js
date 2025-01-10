@@ -20,8 +20,8 @@
 
 // let a=document.getElementsByClassName("light-mode");
 // let b=document.getElementsByClassName("dark-mode");         
-                          
-                                                                          
+
+
 // let f ={
 //     name:"Shahid",
 //     age:22,
@@ -29,7 +29,7 @@
 //     country:"India",
 // } 
 // console.log(f);      
-                  
+
 // let age=20;
 // if(age>18){
 //     console.log("You are eligible ");
@@ -103,9 +103,12 @@
 // console.log("Sha\"hid");
 
 
-let b= "Elephant";
+let b = "Elephant";
 console.log(b.toUpperCase());
 console.log(b.toLowerCase());
-console.log(b.slice(1,4));
-console.log(b.replace("Ele","44"));
+console.log(b.slice(1, 4));
+console.log(b.replace("Ele", "44"));
+
+
+console.log(b.concat("Ele", "44"));
 
