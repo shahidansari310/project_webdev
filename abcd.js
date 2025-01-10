@@ -107,4 +107,5 @@ let b= "Elephant";
 console.log(b.toUpperCase());
 console.log(b.toLowerCase());
 console.log(b.slice(1,4));
+console.log(b.replace("Ele","44"));
 
