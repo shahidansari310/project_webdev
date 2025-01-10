@@ -96,3 +96,7 @@
 // }
 // func1("Shahid");
 
+let name="Shahid";
+let f="Anything";
+console.log(name + " " +f);
+console.log(`${name} ${f}`);
