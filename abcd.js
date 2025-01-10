@@ -112,3 +112,5 @@
 
 // console.log(b.concat("Ele", "44"));
 
+let arr = [1,3,4,5,7] ;
+console.log(typeof arr);
