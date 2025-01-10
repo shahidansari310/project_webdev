@@ -79,19 +79,20 @@
 // }while(i<4);
 // it will run one time even if the condition is false
 
-function greets(name){
-    console.log("Hello "+name);
-}
+// function greets(name){
+//     console.log("Hello "+name);
+// }
 
-function sum(a,b){
-    return a+b;
-}
-sum(5,6);
-console.log(sum(5,6));
+// function sum(a,b){
+//     return a+b;
+// }
+// sum(5,6);
+// console.log(sum(5,6));
 
-// Nan=Not a number
+// // Nan=Not a number
 
-const func1 =(x)=>{
-    console.log("Hello "+x);
-}
-func1("Shahid");
+// const func1 =(x)=>{
+//     console.log("Hello "+x);
+// }
+// func1("Shahid");
+
