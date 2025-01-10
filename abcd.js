@@ -72,9 +72,16 @@
 //     console.log(i);
 //     i++;
 // }
-let i=5;
-do{
-    console.log(i);
-    i++;
-}while(i<4);
+// let i=5;
+// do{
+//     console.log(i);
+//     i++;
+// }while(i<4);
 // it will run one time even if the condition is false
+
+function greets(name){
+    console.log("Hello "+name);
+}
+
+
+greets("Shahid");
