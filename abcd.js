@@ -96,7 +96,15 @@
 // }
 // func1("Shahid");
 
-let name="Shahid";
-let f="Anything";
-console.log(name + " " +f);
-console.log(`${name} ${f}`);
+// let name="Shahid";
+// let f="Anything";
+// console.log(name + " " +f);
+// console.log(`${name} ${f}`);
+// console.log("Sha\"hid");
+
+
+let b= "Elephant";
+console.log(b.toUpperCase());
+console.log(b.toLowerCase());
+console.log(b.slice(1,4));
+
