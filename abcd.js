@@ -83,5 +83,15 @@ function greets(name){
     console.log("Hello "+name);
 }
 
+function sum(a,b){
+    return a+b;
+}
+sum(5,6);
+console.log(sum(5,6));
 
-greets("Shahid");
+// Nan=Not a number
+
+const func1 =(x)=>{
+    console.log("Hello "+x);
+}
+func1("Shahid");
