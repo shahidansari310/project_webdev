@@ -103,12 +103,12 @@
 // console.log("Sha\"hid");
 
 
-let b = "Elephant";
-console.log(b.toUpperCase());
-console.log(b.toLowerCase());
-console.log(b.slice(1, 4));
-console.log(b.replace("Ele", "44"));
+// let b = "Elephant";
+// console.log(b.toUpperCase());
+// console.log(b.toLowerCase());
+// console.log(b.slice(1, 4));
+// console.log(b.replace("Ele", "44"));
 
 
-console.log(b.concat("Ele", "44"));
+// console.log(b.concat("Ele", "44"));
 
