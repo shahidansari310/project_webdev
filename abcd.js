@@ -112,9 +112,10 @@
 
 // console.log(b.concat("Ele", "44"));
 
-let arr = [1,3,4,5,7] ;
-console.log(typeof arr);
-console.log(arr.join(" and "));
-console.log(arr.shift());
-console.log(arr.unshift("1"));
- 
+// let arr = [1,3,4,5,7] ;
+// console.log(typeof arr);
+// console.log(arr.join(" and "));
+// console.log(arr.shift());
+// console.log(arr.unshift("1"));
+//  splice
+
