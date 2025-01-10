@@ -119,3 +119,13 @@
 // console.log(arr.unshift("1"));
 //  splice
 
+let a=[1,93,5,6,88];
+for (let i=0; i<a.length;i++) {
+    const element=a[i];
+    console.log(element);
+}
+console.log(a.sort())
+
+for (const element of a) {
+    console.log(element);
+}
