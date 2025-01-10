@@ -119,13 +119,20 @@
 // console.log(arr.unshift("1"));
 //  splice
 
-let a=[1,93,5,6,88];
-for (let i=0; i<a.length;i++) {
-    const element=a[i];
-    console.log(element);
-}
-console.log(a.sort())
+// let a=[1,93,5,6,88];
+// for (let i=0; i<a.length;i++) {
+//     const element=a[i];
+//     console.log(element);
+// }
+// console.log(a.sort())
 
-for (const element of a) {
-    console.log(element);
-}
+// for (const element of a) {
+//     console.log(element);
+// }
+
+
+let ac=[1,5,7,34,2,56,8,10];
+let newac= ac.map((e) =>{
+    return e**2;
+})
+console.log(newac);
