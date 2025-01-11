@@ -178,3 +178,8 @@ let d=document.querySelectorAll(".box").forEach(e=>{
     e.style.backgroundColor="green";
 
 })
+
+
+// .matches("#red")
+// a.closet("#red")
+document.querySelector(".box").contains(0);
