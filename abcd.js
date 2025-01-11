@@ -149,3 +149,15 @@
 //     return a*b
 // }
 // console.log(newac.reduce(red));
+
+
+/*
+document.body.childNodes
+NodeList(7) [text, div, text, script, text, audio.audio-output, div#volume-booster-visusalizer]0: text1: div2: text3: script4: text5: audio.audio-output6: div#volume-booster-visusalizerlength: 7[[Prototype]]: NodeList
+document.body.childNodes[0]
+#text
+document.body.childNodes[1]
+<div>​…​</div>​
+document.body.childNodes[1].childNodes
+NodeList(11) [text, div.box, text, div.box, text, div.box, text, div.box, text, div.box, text]0: text1: div.box2: text3: div.box4: text5: div.box6: text7: div.box8: text9: div.box10: textlength: 11[[Prototype]]: NodeList
+*/ 

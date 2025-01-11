@@ -5,17 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+    <style>
+        .box{
+            height: 45px;
+            width: 56px;
+            border: 2px solid ;
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
 </head>
 
 <body>
     <div>
-        <div class="box">
-            This is a box.
-        </div>
+       <div class="box">box 1</div>
+       <div class="box">box 2</div>
+       <div class="box">box 3</div>
+       <div class="box">box 4</div>
+       <div class="box">box 5</div>
     </div>
     <script>
-        console.log(document.body);
-        console.log(document.title);
+        // console.log(document.body);
+        // console.log(document.title);
         document.body.style.background = "gray";
     </script>
 </body>
