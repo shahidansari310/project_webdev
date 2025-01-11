@@ -170,3 +170,6 @@ a[1].style.backgroundColor="red";
 
 let b=document.getElementById("red");
 b.style.backgroundColor="yellow";
+
+let c=document.querySelector(".box");
+c.style.backgroundColor="blue";
