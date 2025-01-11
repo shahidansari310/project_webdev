@@ -173,3 +173,8 @@ b.style.backgroundColor="yellow";
 
 let c=document.querySelector(".box");
 c.style.backgroundColor="blue";
+
+let d=document.querySelectorAll(".box").forEach(e=>{
+    e.style.backgroundColor="green";
+
+})
