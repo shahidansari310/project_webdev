@@ -131,8 +131,21 @@
 // }
 
 
-let ac=[1,5,7,34,2,56,8,10];
-let newac= ac.map((e) =>{
-    return e**2;
-})
-console.log(newac);
+// let newac=[1,5,7,34,2,56,8,10];
+// let newac= ac.map((e) =>{
+//     return e**2;
+// })
+// console.log(newac);
+
+// const greaterthan = (e) =>{
+//     if(e>7){
+//         return true
+//     }
+//     return false
+// }
+// console.log(newac.filter(greaterthan));
+
+// const red =(a,b)=>{
+//     return a*b
+// }
+// console.log(newac.reduce(red));
