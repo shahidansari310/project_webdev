@@ -161,3 +161,12 @@ document.body.childNodes[1]
 document.body.childNodes[1].childNodes
 NodeList(11) [text, div.box, text, div.box, text, div.box, text, div.box, text, div.box, text]0: text1: div.box2: text3: div.box4: text5: div.box6: text7: div.box8: text9: div.box10: textlength: 11[[Prototype]]: NodeList
 */ 
+
+console.log("hii");
+let a=document.getElementsByClassName("box");
+console.log(a);
+
+a[1].style.backgroundColor="red";
+
+let b=document.getElementById("red");
+b.style.backgroundColor="yellow";
