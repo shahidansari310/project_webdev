@@ -13,8 +13,11 @@ body{
     margin-top: 100px;
     width: 60%;
     height: 150px;
-    border-radius: 25px;
-    padding:10% ;
+    padding-top: 10px;
+    border-radius: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 130px;
     background-color: antiquewhite;
 }
 .quiz{
@@ -31,21 +34,22 @@ body{
     gap:4px;
 }
 .nextbtn{
+    font-size: 12px;
     font-weight: 700;
     background-color: brown;
     color:white;
-    border-radius: 20%;
-    padding:3px;
+    border-radius: 5px;
+    padding:5px;
 }
-.a{
+#a{
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
 .btn{
-    padding: 2px;
-    border-radius: 20px;
+    padding: 8px;
+    border-radius: 5px;
     padding-left:5px ;
     display: flex;
     justify-content: start;
