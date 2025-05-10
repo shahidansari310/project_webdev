@@ -34,6 +34,7 @@ body{
     gap:4px;
 }
 .nextbtn{
+    display: none;
     font-size: 12px;
     font-weight: 700;
     background-color: brown;
@@ -55,7 +56,16 @@ body{
     justify-content: start;
     transition: all 2s;
 }
-.btn:hover{
+.btn:disabled{
+    cursor: no-drop;
+}
+.btn:hover:not([disabled]){
     background-color: black;
     color: white;
+}
+.correct{
+    background-color: rgb(94, 168, 94);
+}
+.incorrect{
+    background-color: rgb(228, 100, 100);
 }
